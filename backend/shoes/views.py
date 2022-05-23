@@ -5,8 +5,6 @@ from rest_framework.decorators import api_view, permission_classes
 from .models import Shoe
 from .serializers import ShoeSerializer
 
-# <<<<<<<<<<<<<<<<< EXAMPLE FOR STARTER CODE USE <<<<<<<<<<<<<<<<<
-
 
 @api_view(['GET'])
 @permission_classes([AllowAny])

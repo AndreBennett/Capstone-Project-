@@ -1,3 +1,4 @@
+from cgi import print_exception
 from django.db import models
 from authentication.models import User
 
@@ -6,8 +7,8 @@ from authentication.models import User
 # <<<<<<<<<<<<<<<<< EXAMPLE FOR STARTER CODE USE <<<<<<<<<<<<<<<<<
 
 
-class Car(models.Model):
+class Shoe(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     make = models.CharField(max_length=30)
     model = models.CharField(max_length=100)
-    year = models.IntegerField()
+    price = models.IntegerField()

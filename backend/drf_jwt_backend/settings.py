@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication.apps.AuthenticationConfig',
     'corsheaders',
-    'shoes.apps.ShoesConfig'  
+    'shoes'  
 ]
 
 MIDDLEWARE = [

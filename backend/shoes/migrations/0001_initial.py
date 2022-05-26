@@ -21,6 +21,8 @@ class Migration(migrations.Migration):
                 ('brand', models.CharField(max_length=30)),
                 ('model', models.CharField(max_length=100)),
                 ('price', models.IntegerField()),
+                ('color', models.CharField(max_length=15)),
+                ('size', models.IntegerField()),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),

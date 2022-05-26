@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.decorators import api_view, permission_classes
 from .models import Shoe
 from .serializers import ShoeSerializer
-
+ 
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
@@ -14,7 +14,7 @@ def get_all_shoes(request):
     return Response(serializer.data)
 
 
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST', 'DELETE'])
 @permission_classes([IsAuthenticated])
 def user_shoes(request):
     print(
@@ -29,3 +29,4 @@ def user_shoes(request):
         shoes = Shoe.objects.filter(user_id=request.user.id)
         serializer = ShoeSerializer(shoes, many=True)
         return Response(serializer.data)
+    

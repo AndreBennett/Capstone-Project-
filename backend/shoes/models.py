@@ -13,4 +13,4 @@ class Shoe(models.Model):
     model = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=5, decimal_places=2)
     color = models.CharField(max_length=30)
-    size = models.IntegerField()
+    size = models.DecimalField(max_digits=5, decimal_places=2)

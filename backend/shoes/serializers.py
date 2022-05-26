@@ -8,4 +8,4 @@ class ShoeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Shoe
         fields = ['id', 'brand', 'model', 'price', 'color', 'size', 'user_id']
-        depth = 1
+        depth = 2

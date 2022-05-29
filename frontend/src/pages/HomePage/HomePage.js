@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div className="container">
       <h1>Home Page for {user.username}!</h1>
-      < Link to='/addshoe'>Add Shoe!</Link>
+      < Link to='/details'>Shoe Details</Link>
       {shoes &&
         shoes.map((shoe) => (
           <p key={shoe.id}>

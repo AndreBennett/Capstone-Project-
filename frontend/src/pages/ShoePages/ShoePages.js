@@ -10,7 +10,7 @@ const ShoePage = () => {
         const fetchShoes = async () => {
             try {
                 let response =await axios.get(
-                    'https://jsonplaceholder.typicode.com/shoes'
+                    'http://127.0.0.1:8000/api/shoes/'
                 );
                 setShoes(response.data);
             } catch (error) {
@@ -21,7 +21,12 @@ const ShoePage = () => {
     }, []);
 
     const handleClick = (shoe) => {
-        navigate(`/details/${shoe.Id}`);
+        navigate(`/details/${shoe.Id}`, {
+            state: {
+                brand: shoe.brand,
+                model: shoe.model.brand
+            }
+        });
 
     };
     return (
@@ -31,7 +36,7 @@ const ShoePage = () => {
             shoes.map((shoe) => {
                 return (
                 <li key={shoe.Id}>
-                    <button onClick={() => handleClick}>Information for {shoe.brand}</button>
+                    <button onClick={() => handleClick(shoe)}>Information for {shoe.brand}</button>
                     <Link to={`/details/${shoe.Id}`}>{shoe.brand}</Link>;
                 </li>
                 );                

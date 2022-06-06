@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: burlywood;
+    color:black;
+    margin: 0;
+}
+
+header {
+    background-color: brown;
+    position: relative;
+    padding: 1rem;
+}
+
+nav a {
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+nav ul a{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 25px;
+}
+
+main {
+    margin: 1rem auto;
+    width: 80%;
+}
+
+main section {
+    margin-top: 6rem;
+    padding: 2rem;
+}
+
+.home img {
+    float: left;
+    margin-right: 3rem;
+    width: 850px;
+}
+
+footer {
+    text-align: center;
+    background-color: brown;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+

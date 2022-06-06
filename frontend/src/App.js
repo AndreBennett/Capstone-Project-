@@ -2,12 +2,14 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
+
 // Pages Imports
 import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import ShoePage from "./pages/ShoePages/ShoePages";
-import ShoeDetailsPage from "./pages/ShoeDetailsPage/ShoeDetailsPage";
+import AddShoePage from "./pages/AddShoePage/AddShoePage";
+
 
 // Component Imports
 import Navbar from "./components/NavBar/NavBar";
@@ -32,7 +34,8 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<ShoePage />} />
-        <Route path="/details/:shoeId" element={<ShoeDetailsPage />} />
+        <Route path="/addshoe" element={<PrivateRoute><AddShoePage /></PrivateRoute>} />
+        
       </Routes>
       <Footer />
     </div>

@@ -19,8 +19,8 @@ p {
 
 button {
   background-color: transparent;
-  border: 2px solid steelblue;
-  color: steelblue;
+  border: 2px solid red;
+  color: red;
   font-size: 1rem;
   font-family: inherit;
   max-width: 100px;

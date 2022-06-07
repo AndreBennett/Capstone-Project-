@@ -21,7 +21,7 @@ nav a {
     text-decoration: none;
 }
 
-nav ul a{
+nav ul {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -30,18 +30,24 @@ nav ul a{
 
 main {
     margin: 1rem auto;
-    width: 80%;
+    width: 95%;
 }
 
 main section {
-    margin-top: 6rem;
+    margin-top: 1rem;
     padding: 2rem;
 }
 
 .home img {
     float: left;
+    margin-right: 1rem;
+    width: 800px;
+}
+
+img {
+    float: left;
     margin-right: 3rem;
-    width: 850px;
+    width: 250px;
 }
 
 footer {

@@ -10,11 +10,14 @@
 </head>
 <body>
     <header>
+        <a>ADIDAS</a>
         <nav>
-            <a>ADIDAS</a>
             <ul>
+                <a href="Andre'sKicks.html">HOMEPAGE</a>
                 <a href="Nike.html">NIKE</a>
                 <a href="Jordan.html">JORDAN</a>
+                <div class="cart"><a href="shoppingcart.html">Cart</a></div>
+                <input type="text" placeholder="Search..">  
             </ul>
         </nav>
     </header>
@@ -25,8 +28,31 @@
                 <img src="images/stan smith.jpg" >
                 <p>Price: $70 </p>
                 <p>Casual white and green low top.</p>
+                <style>
+                    .fa {
+                        font-size: 50px;
+                        cursor: pointer;
+                        user-select: none;
+                    }
+                    .fa:hover{
+                        color: brown;
+                    }
+                </style>
                 <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("fa-thumbs-down");
+                    }
+                </script>
                 <button onclick="Checkout.html">Add to Cart!</button>
+                <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                    <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+                    
+                    </textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                    </form>
             </div>
             <div class="column">
                 <h2>Adidas Yeezy 350</h2>
@@ -34,7 +60,20 @@
                 <p>Price: $220</p>
                 <p>Yeezy 350 Tail Light.</p>
                 <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("fa-thumbs-down");
+                    }
+                </script>
                 <button onclick="Checkout.html">Add to Cart!</button>
+                <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                    <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+                    
+                    </textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                    </form>
             </div>
             <div class="column" >
                 <h3>Adidas Ultraboost</h3>
@@ -42,7 +81,20 @@
                 <p>Price: $225</p>
                 <p>Adidas Ultraboost 2021.</p>
                 <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("fa-thumbs-down");
+                    }
+                </script>
                 <button onclick="Checkout.html">Add to Cart!</button>
+                <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                    <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+                    
+                    </textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                    </form>
             </div>
             <div class="column" >
                 <h3>Adidas Superstar</h3>
@@ -50,7 +102,20 @@
                 <p>Price: $100</p>
                 <p>Casual classic superstar.</p>
                 <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("fa-thumbs-down");
+                    }
+                </script>
                 <button onclick="Checkout.html">Add to Cart!</button>
+                <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                    <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+                    
+                    </textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                    </form>
             </div>
             <div class="column" >
                 <h3>Adidas NMD </h3>
@@ -58,7 +123,20 @@
                 <p>Price: $220</p>
                 <p>Adidas NMD Human Race runner.</p>
                 <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("fa-thumbs-down");
+                    }
+                </script>
                 <button onclick="Checkout.html">Add to Cart!</button>
+                <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                    <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+                    
+                    </textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                    </form>
             </div>
         </div>
     </main>

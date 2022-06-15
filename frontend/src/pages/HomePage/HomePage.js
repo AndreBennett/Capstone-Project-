@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import axios from "axios";
 
 const HomePage = () => {
@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div className="container">
       <h1>Home Page for {user.username}!</h1>
-      < Link to='/details'>Shoe details!</Link>
+      < Link to="file:///C:/Users/andre/Desktop/Capstone-Project-/frontend/Andre'sKicks.html">Andre's Closet</Link>
       {shoes &&
         shoes.map((shoe) => (
           <p key={shoe.id}>

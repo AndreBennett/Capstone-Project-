@@ -1,5 +1,13 @@
+*,
+*::before
+*::after{
+    margin: 2;
+    padding: 0;
+    box-sizing: inherit;
+}
 html {
     box-sizing: border-box;
+    font-size: 100%;
 }
 
 body {
@@ -12,20 +20,50 @@ body {
 header {
     background-color: brown;
     position: relative;
-    padding: 1rem;
+    padding: 2rem;
+    font-size: 40px;
 }
 
 nav a {
-    color: black;
-    font-size: 40px;
+    float: right;
+    display: block;
+    color: burlywood;
+    text-align: center;
+    padding: 12px 16px;
     text-decoration: none;
+    font-size: 40px;
 }
 
+nav a:hover{
+    background-color: burlywood;
+    color: brown;
+}
+
+nav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+nav div {
+    float: right;
+    display: block;
+    color: burlywood;
+    text-align: center;
+    padding: -1rem;
+    text-decoration: none;
+    font-size: 40px;
+}
 nav ul {
     position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 25px;
+    overflow: hidden;
+    
 }
 
 main {
@@ -72,4 +110,3 @@ footer {
     left: 0;
     bottom: 0;
 }
-
